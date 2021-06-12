@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Angular-Accenture Academy WebSite</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	<link href="style.css" rel="stylesheet">
+	<!--For Thiek's Future Experiments-->
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>-->
+</head>
+<body>
+	<script src="./main.js"></script>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+		<img src="./img/angular_logo.png" alt="" class="d-inline-block align-text-top">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <a href="angular.html" class="btn btn-secondary btn-md" tabindex="-1" role="button" aria-disabled="true">Compare Versions</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!--- Image Slider (Carousell) -->
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/slider/1.png" class="featurette-image img-fluid mx-auto"  alt="Responsive image" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+      <div class="container">
+        <div class="carousel-caption text-start">
+          <h1>Angular Features</h1>
+          <p>CROSS PLATFORM | SPEED AND PERFORMANCE | PRODUCTIVITY | FULL DEVELOPMENT STORY</p>
+          <p><a class="btn btn-lg btn-primary" href="https://angular.io/features" target="_blank">View Features</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./img/slider/2.png" class="featurette-image img-fluid mx-auto"  alt="Responsive image" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Introduction to Angular</h1>
+          <p>Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript</p>
+          <p><a class="btn btn-lg btn-primary" href="angular.html" target="_blank"> Comparer Versions</a><p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./img/slider/3.png" class="featurette-image img-fluid mx-auto"  alt="Responsive image" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+
+      <div class="container">
+        <div class="carousel-caption text-end">
+          <h1>Security Best Practises</h1>
+          <p>Angular's built-in protections against common web-application vulnerabilities and attacks such as cross-site scripting attacks. It doesn't cover application-level security, such as authentication and authorization.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://angular.io/guide/security" target="_blank">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--- Two Column Section -->
+<div class="row">
+<div class="twoCol">
+  <div class="row">
+    <div class="col-4">
+			<h2>Angular Concepts</h2>
+      <div class="card concept" style="width: 18rem;">
+
+				<ul class="list-group list-group-flush">
+          <li id="1" class="list-group-item"><a data-bs-toggle="collapse" data-target="#conc1" href="#conc1" aria-expanded="false" aria-controls="conc1">Components</a></li>
+					<li id="2" class="list-group-item"><a data-bs-toggle="collapse" data-bs-toggle="#conc2" href="#conc2" aria-expanded="false" aria-controls="conc2">Templates, directives, and data binding</a></li>
+					<li id="3" class="list-group-item"><a data-bs-toggle="collapse" data-bs-toggle="#conc3" href="#conc3" aria-expanded="false" aria-controls="conc3">Services and dependency injection</a></li>
+					<li id="4" class="list-group-item"><a data-bs-toggle="collapse" data-bs-toggle="#conc4" href="#conc4" aria-expanded="false" aria-controls="conc4">Routing</a></li>
+				</ul>
+			</div>
+    </div>
+    <div class="col-8 ">
+      <div id = "conc1" class="collapse">
+				<img src="./img/cards/1.png" class="card-img-top" alt="..." style="height: 50px;width:50px">
+				<div class="card-body">
+					<h5 class="card-title">Components</h5>
+					<p class="card-text">A component controls a patch of screen called a view. For example, individual components define and control each of the following views from the Tour of Heroes tutorial:
+
+            The application root with the navigation links.
+            The list of heroes.
+            The hero editor.
+            You define a component's application logic—what it does to support the view—inside a class. The class interacts with the view through an API of properties and methods.</p>
+					<a href="#" class="btn btn-primary">View More</a>
+				</div>
+			</div>
+
+      <div id = "conc2" class="collapse">
+				<img src="./img/cards/2.png" class="card-img-top" alt="..." style="height: 50px;width:50px">
+				<div class="card-body">
+					<h5 class="card-title">Templates, directives, and data binding</h5>
+					<p class="card-text">Every Angular application has at least one component, the root component that connects a component hierarchy with the page document object model (DOM). Each component defines a class that contains application data and logic, and is associated with an HTML template that defines a view to be displayed in a target environment.The @Component() decorator identifies the class immediately below it as a component, and provides the template and related component-specific metadata.</p>
+					<a href="#" class="btn btn-primary">View More</a>
+				</div>
+			</div>
+
+      <div id = "conc3" class="collapse">
+				<img src="./img/cards/3.png" class="card-img-top" alt="..." style="height: 50px;width:50px">
+				<div class="card-body">
+					<h5 class="card-title">Services and dependency injection</h5>
+					<p class="card-text">Service is a broad category encompassing any value, function, or feature that an application needs. A service is typically a class with a narrow, well-defined purpose. It should do something specific and do it well.Angular distinguishes components from services to increase modularity and reusability. By separating a component's view-related functionality from other kinds of processing, you can make your component classes lean and efficient.  
+          Ideally, a component's job is to enable the user experience and nothing more. A component should present properties and methods for data binding, in order to mediate between the view (rendered by the template) and the application logic (which often includes some notion of a model).</p>
+					<a href="#" class="btn btn-primary">View More</a>
+				</div>
+			</div>
+
+      <div id = "conc4" class="collapse">
+				<img src="./img/cards/4.png" class="card-img-top" alt="..." style="height: 50px;width:50px">
+				<div class="card-body">
+					<h5 class="card-title">Routing</h5>
+					<p class="card-text">The Angular Router NgModule provides a service that lets you define a navigation path among the different application states and view hierarchies in your application. It is modeled on the familiar browser navigation conventions:Enter a URL in the address bar and the browser navigates to a corresponding page.Click links on the page and the browser navigates to a new page.
+          Click the browser's back and forward buttons and the browser navigates backward and forward through the history of pages you've seen.</p>
+					<a href="#" class="btn btn-primary">View More</a>
+				</div>
+			</div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<!--- Footer -->
+<footer id="footer" class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column with logo -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+      	<img src="./img/footerLogo.png" alt="" class="d-inline-block align-text-top" style="height: 100px;width: 100px;">
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">About</a>
+          </li>
+          <li>
+            <a href="#!">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Social media Links -->
+        <h5 class="text-uppercase">Social Media</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Facebook</a>
+          </li>
+          <li>
+            <a href="#!">Twitter</a>
+          </li>
+ 
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <a href="https://angular-accenture.com/">Angular-Accenture</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+</body>
+</html>
+
+
